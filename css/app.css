@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/*
+ * Styles for the canvas
+ */
+canvas {
+    border: 2px solid black;
+    width:352px;
+    height:440px;
+    position: absolute;
+    top:95px;
+    left:480px;
+}
+
+.deck {
+    width: 400px;
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.deck .card {
+    display: flex;
+}
+
+.deck .card.water-block {
+    height: 70px;
+    width: 70px;
+    cursor: default;
+    background: url('../images/water-block.png'); 
+    background-position-y: 110px;
+    
+}
+
+.deck .card.stone-block {
+    height: 70px;
+    width: 70px;
+    cursor: default;
+    background: url('../images/stone-block.png'); 
+    background-position-y: 110px;
+}
+
+.deck .card.grass-block {
+    height: 70px;
+    width: 70px;
+    cursor: default;
+    background: url('../images/grass-block.png'); 
+    background-position-y: 110px;
+}
+
+.deck .card.grass.grass-block {
+    height: 90px;
+    width: 70px;
+    background-image: #00ff00 url('../images/grass-block.png'); 
+    background-position-y: 90px;
+}
+
